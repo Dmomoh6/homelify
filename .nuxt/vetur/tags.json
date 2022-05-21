@@ -1,0 +1,44 @@
+{
+  "FeaturedListings": {
+    "description": "Auto imported from components/FeaturedListings.vue"
+  },
+  "Foot": {
+    "description": "Auto imported from components/Foot.vue"
+  },
+  "HomeCard": {
+    "description": "Auto imported from components/HomeCard.vue"
+  },
+  "HomeRow": {
+    "description": "Auto imported from components/HomeRow.vue"
+  },
+  "ImageUploader": {
+    "description": "Auto imported from components/ImageUploader.vue"
+  },
+  "MyHomes": {
+    "description": "Auto imported from components/MyHomes.vue"
+  },
+  "PremiumListings": {
+    "description": "Auto imported from components/PremiumListings.vue"
+  },
+  "PropertyDetails": {
+    "description": "Auto imported from components/PropertyDetails.vue"
+  },
+  "PropertyGallery": {
+    "description": "Auto imported from components/PropertyGallery.vue"
+  },
+  "PropertyHeader": {
+    "description": "Auto imported from components/PropertyHeader.vue"
+  },
+  "PropertyMap": {
+    "description": "Auto imported from components/PropertyMap.vue"
+  },
+  "PropertyReviews": {
+    "description": "Auto imported from components/PropertyReviews.vue"
+  },
+  "SearchBar": {
+    "description": "Auto imported from components/SearchBar.vue"
+  },
+  "ShortText": {
+    "description": "Auto imported from components/ShortText.vue"
+  }
+}

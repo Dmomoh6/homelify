@@ -1,0 +1,46 @@
+[
+  {
+    "name": "admin",
+    "path": "/admin",
+    "component": "/Users/dmomoh/Desktop/Homelify/pages/admin.vue",
+    "chunkName": "pages/admin",
+    "children": [
+      {
+        "name": "admin-homes",
+        "path": "homes",
+        "component": "/Users/dmomoh/Desktop/Homelify/pages/admin/homes.vue",
+        "chunkName": "pages/admin/homes",
+        "_name": "_5db92d23"
+      }
+    ],
+    "_name": "_759f4104"
+  },
+  {
+    "name": "no-access",
+    "path": "/no-access",
+    "component": "/Users/dmomoh/Desktop/Homelify/pages/no-access.vue",
+    "chunkName": "pages/no-access",
+    "_name": "_217f871f"
+  },
+  {
+    "name": "search",
+    "path": "/search",
+    "component": "/Users/dmomoh/Desktop/Homelify/pages/search.vue",
+    "chunkName": "pages/search",
+    "_name": "_dfc183ee"
+  },
+  {
+    "name": "home-id",
+    "path": "/home/:id?",
+    "component": "/Users/dmomoh/Desktop/Homelify/pages/home/_id.vue",
+    "chunkName": "pages/home/_id",
+    "_name": "_4970f4aa"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/dmomoh/Desktop/Homelify/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_d87de8fe"
+  }
+]
