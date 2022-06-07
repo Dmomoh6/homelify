@@ -9,3 +9,9 @@ export const mutations = {
     state.user = user || {};
   },
 };
+
+export const getters = {
+  isLoggedIn(state) {
+    return state.isLoggedIn;
+  },
+};

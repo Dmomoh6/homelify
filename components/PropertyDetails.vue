@@ -1,5 +1,5 @@
 <template>
-  <div class="app-wrapper">
+  <div class="app-wrapper property-details">
     <div class="app-column-split">
       <div class="col-1">
         <div class="specifications">
@@ -66,6 +66,8 @@
 </template>
 
 <script>
+import Cookie from "js-cookie";
+import { state } from "../store/auth";
 export default {
   props: {
     home: {
@@ -88,9 +90,18 @@ export default {
       return "  " + text + "s";
     },
     checkout() {
-      const start = this.range.start.getTime() / 1000;
-      const end = this.range.end.getTime() / 1000;
-      this.$stripe.checkout(this.home.objectID, start, end);
+      if (!this.$store.getters["auth/isLoggedIn"]) {
+        alert("Please sign in to make a reservation");
+        return;
+      } else {
+        if (this.range.start == null || this.range.end == null) {
+          alert("Please select a check in and check out date");
+          return;
+        }
+        const start = this.range.start.getTime() / 1000;
+        const end = this.range.end.getTime() / 1000;
+        this.$stripe.checkout(this.home.objectID, start, end);
+      }
     },
   },
   mounted() {
@@ -100,101 +111,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.feat {
-  @apply mr-2 border border-grey p-3 rounded inline-block mb-3;
-}
-
-.features {
-  @apply mt-5 mb-7 font-normal text-grey;
-}
-
-.description {
-  @apply text-grey leading-relaxed;
-}
-
-.specifications {
-  @apply text-grey font-normal flex;
-}
-
-.specifications > div {
-  @apply mb-2 pr-8;
-}
-
-.specifications img {
-  @apply inline-block mr-1;
-}
-
-.col-1 {
-  width: 70%;
-  float: left;
-}
-
-.col-2 {
-  @apply grid place-content-center pt-12;
-  width: 30%;
-}
-
-.price {
-  @apply font-medium text-4xl text-black;
-}
-
-.pricetag {
-  @apply font-normal text-grey text-center mb-5;
-
-  font-size: 27.5px;
-}
-
-@media (max-width: 825px) {
-  .feat {
-    @apply p-1.5 -mt-10;
-  }
-
-  .description {
-    @apply -mt-5;
-  }
-  .col-1 {
-    width: 100%;
-    float: left;
-  }
-  .col-2 {
-    @apply grid place-content-center;
-    width: 100%;
-  }
-
-  .specifications img {
-    width: 20px;
-  }
-
-  .price {
-    @apply font-medium text-4xl text-black;
-  }
-
-  .pricetag {
-    @apply font-normal text-grey text-center -mt-5 mb-5;
-
-    font-size: 27.5px;
-  }
-
-  input {
-    width: unset;
-  }
-
-  input::placeholder,
-  .app-big-button,
-  .feat,
-  .description,
-  .specifications {
-    font-size: 13px;
-  }
-
-  .app-big-button {
-    @apply mb-5;
-  }
-}
-
-.app-big-button {
-  cursor: pointer;
-}
-</style>

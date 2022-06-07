@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="default">
     <header class="app-header">
       <div class="app-logo">
         <nuxt-link to="/"
@@ -33,62 +33,6 @@
     <nuxt />
   </div>
 </template>
-
-<style scoped>
-.app-logo {
-  width: 150px;
-}
-
-.dropdown {
-  @apply shadow-lg;
-  background-color: #ffffff;
-  position: absolute;
-  right: 40px;
-  width: 150px;
-  text-align: right;
-  padding: 20px 0px 20px 0px;
-  border-radius: 6px;
-  top: 100px;
-  z-index: 100;
-  transition: all 0.5s ease-in-out;
-}
-
-.not-active {
-  z-index: -1;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.5s ease-in-out;
-}
-.avatar {
-  cursor: pointer;
-}
-
-.dropdown li:hover {
-  @apply text-white bg-homelify;
-  cursor: pointer;
-}
-
-.dropdown li {
-  @apply px-3 font-semibold text-homelify my-2 py-2;
-}
-
-@media (max-width: 825px) {
-  .app-logo {
-    width: 35px;
-  }
-
-  .add-home {
-    width: 27.5px;
-  }
-  .dropdown {
-    right: 20px;
-  }
-}
-
-.app-header {
-  background-color: #ffffff;
-}
-</style>
 
 <script>
 import Foot from "../components/Foot.vue";

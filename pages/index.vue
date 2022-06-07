@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index">
     <div class="container grid content-center">
       <div class="welcome">
         Need <span class="bold">accommodation</span> for your next
@@ -12,15 +12,7 @@
     <premium-listings />
 
     <featured-listings :homes="featuredHomes" />
-    <!--   <div
-      v-for="home in homes"
-      :key="home.objectID"
-      style="float: left; margin: 10px"
-    >
-      <nuxt-link :to="`/home/${home.objectID}`">
-        <home-card :home="home" />
-      </nuxt-link>
-    </div> -->
+
     <foot />
   </div>
 </template>
@@ -54,33 +46,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.container {
-  background-image: url(/images/bg.png);
-  background-size: cover !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 90vh;
-  position: relative;
-  top: -90px;
-  min-width: 100vw;
-}
-
-.welcome {
-  width: 100vw !important;
-}
-
-.bold {
-  @apply font-bold;
-}
-
-.welcome {
-  @apply text-4xl text-white leading-normal text-center;
-}
-
-@media screen and (max-width: 825px) {
-  .welcome {
-    @apply text-2xl px-10;
-  }
-}
-</style>
+<style scoped></style>

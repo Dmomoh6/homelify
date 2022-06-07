@@ -3,9 +3,9 @@ import { createImage} from '~image'
 import NuxtImg from '~image/components/nuxt-img.vue'
 import NuxtPicture from '~image/components/nuxt-picture.vue'
 
-import * as staticRuntime$bfee from '/Users/dmomoh/Desktop/Homelify/node_modules/@nuxt/image/dist/runtime/providers/static.js'
-import * as cloudinaryRuntime$2d39 from '/Users/dmomoh/Desktop/Homelify/node_modules/@nuxt/image/dist/runtime/providers/cloudinary.js'
-import * as ipxRuntime$42ab from '/Users/dmomoh/Desktop/Homelify/node_modules/@nuxt/image/dist/runtime/providers/ipx.js'
+import * as staticRuntime$c54c from '/Users/dmomoh/Documents/GitHub/Homelify/node_modules/@nuxt/image/dist/runtime/providers/static.js'
+import * as cloudinaryRuntime$569f from '/Users/dmomoh/Documents/GitHub/Homelify/node_modules/@nuxt/image/dist/runtime/providers/cloudinary.js'
+import * as ipxRuntime$635f from '/Users/dmomoh/Documents/GitHub/Homelify/node_modules/@nuxt/image/dist/runtime/providers/ipx.js'
 
 const imageOptions = {
   "screens": {
@@ -24,9 +24,9 @@ const imageOptions = {
 }
 
 imageOptions.providers = {
-  ['static']: { provider: staticRuntime$bfee, defaults: {} },
-  ['cloudinary']: { provider: cloudinaryRuntime$2d39, defaults: {"baseURL":"https://res.cloudinary.com/dmomoh6/image/upload/"} },
-  ['ipx']: { provider: ipxRuntime$42ab, defaults: {} }
+  ['static']: { provider: staticRuntime$c54c, defaults: {} },
+  ['cloudinary']: { provider: cloudinaryRuntime$569f, defaults: {"baseURL":"https://res.cloudinary.com/dmomoh6/image/upload/"} },
+  ['ipx']: { provider: ipxRuntime$635f, defaults: {} }
 }
 
 Vue.component(NuxtImg.name, NuxtImg)

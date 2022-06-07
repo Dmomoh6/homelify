@@ -50,19 +50,3 @@ export default {
   },
 };
 </script>
-
-<style>
-input[type="file"] {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-
-  cursor: pointer;
-}
-
-.imageUpload {
-  width: 100%;
-  height: 100%;
-  z-index: 3000;
-}
-</style>

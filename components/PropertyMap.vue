@@ -1,5 +1,5 @@
 <template>
-  <div class="app-section">
+  <div class="app-section property-map">
     <div class="app-wrapper">
       <div class="homeAddress">
         {{ home.location.address }}, {{ home.location.city }},
@@ -27,18 +27,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.map {
-  width: 100%;
-  height: 450px;
-}
-
-.homeAddress {
-  @apply font-medium mb-10 relative text-grey top-8;
-}
-
-.app-section {
-  clear: both;
-}
-</style>

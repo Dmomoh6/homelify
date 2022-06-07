@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="search-page">
     <div class="search">
       <div class="search-information">
         <div class="search-bar"><search-bar /></div>
@@ -102,34 +102,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.marker {
-  background-color: #ffffff;
-  border: 1px solid lightgray;
-  font-family: "Galano" !important;
-  font-weight: 500;
-  border-radius: 20px;
-  padding: 5px 8px;
-}
-
-.marker-highlight {
-  color: #ffffff !important;
-  background-color: #000000;
-  border-color: #000000;
-}
-
-.search-label {
-  margin-left: 45px;
-}
-
-.no-results {
-  @apply grid place-content-center text-xl font-medium mt-10;
-}
-</style>
-
-<style scoped>
-.search-bar {
-  @apply justify-center grid mt-5;
-}
-</style>

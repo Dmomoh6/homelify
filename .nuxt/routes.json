@@ -2,45 +2,45 @@
   {
     "name": "admin",
     "path": "/admin",
-    "component": "/Users/dmomoh/Desktop/Homelify/pages/admin.vue",
+    "component": "/Users/dmomoh/Documents/GitHub/Homelify/pages/admin.vue",
     "chunkName": "pages/admin",
     "children": [
       {
         "name": "admin-homes",
         "path": "homes",
-        "component": "/Users/dmomoh/Desktop/Homelify/pages/admin/homes.vue",
+        "component": "/Users/dmomoh/Documents/GitHub/Homelify/pages/admin/homes.vue",
         "chunkName": "pages/admin/homes",
-        "_name": "_5db92d23"
+        "_name": "_8c0e96b2"
       }
     ],
-    "_name": "_759f4104"
+    "_name": "_0b7cda02"
   },
   {
     "name": "no-access",
     "path": "/no-access",
-    "component": "/Users/dmomoh/Desktop/Homelify/pages/no-access.vue",
+    "component": "/Users/dmomoh/Documents/GitHub/Homelify/pages/no-access.vue",
     "chunkName": "pages/no-access",
-    "_name": "_217f871f"
+    "_name": "_20431fa3"
   },
   {
     "name": "search",
     "path": "/search",
-    "component": "/Users/dmomoh/Desktop/Homelify/pages/search.vue",
+    "component": "/Users/dmomoh/Documents/GitHub/Homelify/pages/search.vue",
     "chunkName": "pages/search",
-    "_name": "_dfc183ee"
+    "_name": "_13621405"
   },
   {
     "name": "home-id",
     "path": "/home/:id?",
-    "component": "/Users/dmomoh/Desktop/Homelify/pages/home/_id.vue",
+    "component": "/Users/dmomoh/Documents/GitHub/Homelify/pages/home/_id.vue",
     "chunkName": "pages/home/_id",
-    "_name": "_4970f4aa"
+    "_name": "_cda666b2"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/dmomoh/Desktop/Homelify/pages/index.vue",
+    "component": "/Users/dmomoh/Documents/GitHub/Homelify/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_d87de8fe"
+    "_name": "_4be4f3f6"
   }
 ]

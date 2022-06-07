@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span class="short-text">
     {{ displayText }}
     <button
       v-if="!isExpanded && isTooLong && !address"
@@ -65,19 +65,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.link {
-  color: #545454;
-  font-weight: 600;
-  background-color: white;
-  border: none;
-  text-decoration: double;
-  cursor: pointer;
-}
-
-.link:focus {
-  border: none;
-  outline: none;
-}
-</style>

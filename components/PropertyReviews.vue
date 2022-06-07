@@ -1,5 +1,5 @@
 <template>
-  <div class="app-section">
+  <div class="app-section property-reviews">
     <div class="app-wrapper">
       <div class="app-review" v-for="review in reviews" :key="review.objectID">
         <img :src="review.reviewer.image" />
@@ -34,49 +34,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.app-wrapper {
-  @apply grid grid-cols-3 mt-15;
-}
-
-@media (max-width: 1024px) {
-  .app-wrapper {
-    @apply grid grid-cols-2 mt-15;
-  }
-}
-
-@media (max-width: 825px) {
-  .app-wrapper {
-    @apply grid grid-cols-1 mt-15;
-  }
-}
-
-.app-review {
-  @apply mt-7;
-}
-
-.app-review > img {
-  @apply rounded-full my-3 ml-1;
-  float: left;
-  width: 75px;
-  margin-right: 15px;
-}
-
-.reviewTitle {
-  @apply my-5;
-}
-
-.reviewName {
-  @apply text-grey font-semibold;
-  font-size: 22.5px;
-}
-
-.reviewDate {
-  @apply text-grey -mt-1.5;
-}
-
-.reviewDetails {
-  @apply clear-both text-sm text-grey leading-loose mr-5 my-2;
-}
-</style>

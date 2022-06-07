@@ -1,5 +1,5 @@
 <template>
-  <div class="app-section">
+  <div class="app-section premium-listings">
     <div class="app-wrapper">
       <div class="title">Premium Listings</div>
 
@@ -66,67 +66,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.title {
-  @apply font-semibold;
-  font-size: 33.5px;
-  margin-bottom: 50px;
-}
-
-.listings {
-  @apply grid grid-cols-4 gap-6;
-}
-
-@media (max-width: 1024px) {
-  .listings {
-    @apply grid grid-cols-2 gap-6;
-    position: relative;
-    top: -50px;
-  }
-
-  .title {
-    @apply font-semibold;
-    font-size: 26.5px;
-    top: -40px;
-
-    position: relative;
-  }
-}
-
-@media (max-width: 825px) {
-  .listings {
-    @apply grid grid-cols-1;
-  }
-
-  .title {
-    @apply text-center;
-  }
-}
-
-.listings > a > div {
-  @apply rounded-3xl;
-  width: 100%;
-  height: 380px;
-  position: relative;
-  overflow: hidden;
-}
-
-.location {
-  position: relative;
-  top: 300px;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.location > h3 {
-  @apply font-semibold text-3xl;
-}
-
-.location > p {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  line-height: 18px;
-  font-size: 17px;
-}
-</style>

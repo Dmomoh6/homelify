@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="home.images[0]" style="width: 200px" /><br />
+    <img :src="home.images[0]" class="home-card-images" /><br />
     {{ home.title }}<br />
     {{ home.location.address }} {{ home.location.city }} {{ home.location.state
     }}<br />
